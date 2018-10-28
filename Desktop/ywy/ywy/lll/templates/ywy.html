@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>ywy</title>
+</head>
+
+<body>
+
+    <form action="{% url "lll:toLogin" %}" method="post">
+        {% csrf_token %}
+        用户名: <input type= "text"  name="userName"  />
+        <a href="{% url "lll:toLogin" %}">注册账号</a> <br />
+
+        密码: <input type="password" name="password" />
+        <a href="{% url "lll:FindPwd" %}">找回密码</a> <br />
+
+
+
+        <input type="submit" value="登陆" name="Login" />
+
+
+        <a href="{% url "lll:changePwd" %}">修改密码</a> <br />
+        {{ result }}
+
+
+
+    </form>
+
+</body>
+
+</html>

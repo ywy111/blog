@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>name</title>
+
+</head>
+<body>
+<form action="{% url "lll:toFindPwd" %}" method="post">
+    {% csrf_token %}
+    用户名：<input type= "text"  name="name"  /> <br />
+    你最喜欢的电影是：<input type= "text"  name="theanswer"   /> <br />
+     <input type="submit" value="确认" name="tofind" />
+
+
+</form>
+</body>
+</html>

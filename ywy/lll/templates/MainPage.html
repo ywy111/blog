@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+</head>
+<body>
+Welcome,{{ name }}<br/>
+info: {{ result }}<br/><br/>
+
+所有用户信息<br/>
+{% for temp in user %}
+用户名:{{ temp.name }}
+密码:{{ temp.pwd }}<br/>
+{% endfor %}
+
+</body>
+</html>
