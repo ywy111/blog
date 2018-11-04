@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{% url "lll:toChangePwd" %}" method="post">
+    {% csrf_token %}
+    账号:<input type="text" name="name"> <br/>
+    原密码:<input type="password" name="oldPwd"> (*找回密码的原始密码为123456） <br/>
+    新密码:<input type="password" name="newPwd"> <br/>
+    <input type="submit" value="修改"><br/>
+    {{ result }}
+
+</form>
+
+</body>
+</html>
